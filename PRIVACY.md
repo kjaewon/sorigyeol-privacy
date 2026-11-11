@@ -1,10 +1,10 @@
-# 소리결 개인정보처리방침 (Privacy Policy)
+# 목소리친구 개인정보처리방침 (Privacy Policy)
 
-*최종 수정일: 2026년 11월 3일*
+*최종 수정일: 2026년 11월 11일*
 
 [English](#en) · [日本語](#ja)
 
-**소리결** (패키지명: `com.next2great.sorigyeol`, 이하 "앱")은 짧게 읽은 목소리의 높낮이·밝기 같은 특징을 기기에서 분석해 색과 작은 캐릭터로 표현하는 앱입니다. 앱이 어떤 정보를 어떻게 다루는지 아래와 같이 안내합니다.
+**목소리친구** (패키지명: `com.next2great.sorigyeol`, 이하 "앱")은 짧게 읽은 목소리의 높낮이·밝기 같은 특징을 기기에서 분석해 색과 작은 캐릭터로 표현하는 앱입니다. 앱이 어떤 정보를 어떻게 다루는지 아래와 같이 안내합니다.
 
 ## 1. 기본 원칙
 
@@ -15,10 +15,10 @@
 
 ## 2. 기기에 저장하는 정보
 
-다음 정보만 기기 내부에 저장합니다.
+앱이 기기에 저장하는 음성 결과와 설정 정보는 다음과 같습니다. 이전 버전에서 만든 함께 만들기 결과에는 14세 미만 표시가 남아 있을 수 있습니다.
 
 - 보관함 결과: 캐릭터와 색, 사용자가 붙인 이름, 설명 문장, 요약 측정값(음높이 중앙값·변화 폭, 소리 밝기 지표, 말한 시간 등), 결과 화면에 그리는 축소한 음높이 곡선
-- 함께 만들기 결과: 참여자가 입력한 이름이나 별명, 관계(가족·친구 등), 14세 미만 표시, 각 참여자의 결과
+- 함께 만들기 결과: 참여자가 입력한 이름이나 별명, 관계(가족·친구 등), 각 참여자의 결과
 - 앱 설정: 테마, 움직임 줄이기, 대표 캐릭터, 첫 안내를 본 여부
 
 이 정보는 개발자에게 전송되지 않으며, Android 클라우드 백업과 기기 간 이전에서도 제외합니다.
@@ -34,7 +34,7 @@
 
 ## 4. 함께 만들기
 
-여러 사람이 한 기기로 차례로 녹음해 결과를 나란히 봅니다. 녹음 전에 모두에게 기기에서 분석하고 녹음 원본은 저장하지 않는다는 점을 알리고 동의를 받도록 안내합니다. 14세 미만 어린이가 참여하면 보호자가 함께 있고 동의했는지 확인합니다. 비교는 측정값의 차이만 보여 주며 궁합 점수를 만들거나 관계·성격을 추정하지 않습니다.
+여러 사람이 한 기기로 차례로 녹음해 결과를 나란히 봅니다. 녹음 전에 모두에게 기기에서 분석하고 녹음 원본은 저장하지 않는다는 점을 알리고 동의를 받도록 안내합니다. 비교는 측정값의 차이만 보여 주며 궁합 점수를 만들거나 관계·성격을 추정하지 않습니다.
 
 ## 5. Google Play 기능
 
@@ -44,7 +44,25 @@
 
 ## 6. 분석·광고
 
-앱에는 광고와 분석 도구가 없습니다. 이후 추가하는 경우 목소리와 결과 내용은 전송하지 않으며, 이 방침을 먼저 고쳐 안내합니다.
+앱에는 광고가 없습니다. 오류 보고와 선택적 이용 통계를 위해 Google Firebase를 사용합니다.
+
+목소리친구는 앱의 오류를 찾아 고치기 위해 Google의 **Firebase Crashlytics**를 사용합니다. 앱이 비정상 종료되거나
+처리하지 못한 오류가 생기면 다음 정보가 Google 서버로 전송됩니다.
+
+- 오류가 난 위치와 직전의 실행 흐름(스택 트레이스), 오류 발생 시각
+- 앱 버전, 기기 모델, 운영체제 버전, 화면 방향, 남은 메모리·저장공간 같은 기기 상태
+- 앱 설치마다 무작위로 만들어지는 Crashlytics 설치 식별자
+
+이 정보에는 이름, 연락처, 계정, 사용자가 앱에 입력한 내용이 포함되지 않으며, 오류 분석과 앱 품질 개선에만 사용합니다.
+전송된 정보는 Google이 [Firebase 개인정보 보호 안내](https://firebase.google.com/support/privacy)에 따라 처리하며,
+Crashlytics 오류 기록은 약 90일 동안 보관된 뒤 삭제됩니다.
+
+목소리친구는 앱 개선을 위해 Google의 **Firebase 애널리틱스(Google Analytics for Firebase)**를 사용합니다.
+사용자가 설정에서 사용 통계 전송을 켰을 때에만 화면 조회, 기능 사용, 앱 사용 시간, 앱 버전, 기기·운영체제 정보,
+앱 설치별 식별자와 대략적인 국가·도시 정보가 Google에 전송됩니다. 설정에서 언제든지 끌 수 있습니다.
+광고 식별자는 수집하지 않도록 설정했습니다. 음성 녹음, 분석 결과, 참여자의 이름을 분석 이벤트에 넣지 않습니다.
+정보는 [Firebase 개인정보 보호 안내](https://firebase.google.com/support/privacy)와
+[Google 개인정보처리방침](https://policies.google.com/privacy)에 따라 처리됩니다.
 
 ## 7. 정보 삭제
 
@@ -54,7 +72,7 @@
 
 ## 8. 아동
 
-앱은 만 14세 미만 아동을 대상으로 하지 않습니다. 함께 만들기에 어린이가 참여할 때는 보호자의 확인을 받으며, 입력한 이름과 결과는 기기에만 저장됩니다.
+앱은 만 14세 미만 아동을 대상으로 하지 않습니다. 함께 만들기의 이름과 결과는 기기에만 저장됩니다.
 
 ## 9. 방침 변경
 
@@ -67,11 +85,11 @@
 
 ---
 
-# Sorigyeol Privacy Policy (English) {#en}
+# Voice Critters Privacy Policy (English) {#en}
 
-**Sorigyeol** (package `com.next2great.sorigyeol`, "the app") analyzes features of a short voice sample, such as pitch and brightness, on your device and expresses them as colors and a small character.
+**Voice Critters** (package `com.next2great.sorigyeol`, "the app") analyzes features of a short voice sample, such as pitch and brightness, on your device and expresses them as colors and a small character.
 
-*Last updated: November 3, 2026*
+*Last updated: November 11, 2026*
 
 ## 1. Principles
 
@@ -83,7 +101,7 @@
 ## 2. Data stored on your device
 
 - Collection results: character and colors, the name you give it, explanation text, summary measurements (median pitch and range, a brightness index, speaking time, etc.) and a reduced pitch curve drawn on the result screen
-- "Make together" results: names or nicknames entered for participants, the relationship (family, friends, etc.), an under-14 flag, and each participant's result
+- "Make together" results: names or nicknames entered for participants, the relationship (family, friends, etc.), and each participant's result
 - App settings: theme, reduce motion, main character, and whether you've seen the first-run guide
 
 This data is not sent to the developer and is excluded from Android cloud backup and device-to-device transfer.
@@ -99,7 +117,7 @@ The app does not request location, contacts or account information.
 
 ## 4. Make together
 
-Several people take turns recording on one device and see their results side by side. Before recording, the app asks you to tell everyone that analysis happens on the device and recordings aren't saved, and to get their agreement. If a child under 14 takes part, it asks you to confirm a guardian is present and agreed. Comparisons only show differences in measured values; there is no compatibility score and no guess about relationships or personality.
+Several people take turns recording on one device and see their results side by side. Before recording, the app asks you to tell everyone that analysis happens on the device and recordings aren't saved, and to get their agreement. Comparisons only show differences in measured values; there is no compatibility score and no guess about relationships or personality.
 
 ## 5. Google Play features
 
@@ -107,7 +125,9 @@ The app communicates with Google Play to check for new versions and to leave a r
 
 ## 6. Analytics and ads
 
-The app has no ads or analytics. If any are added later, voice and result content will not be sent, and this policy will be updated first.
+The app has no ads. Firebase Crashlytics sends crash reports, such as stack traces, app and device information, and installation identifiers, to Google to help fix errors. Crash reports are retained by Firebase for approximately 90 days.
+
+Firebase Analytics is off by default. If you enable usage analytics in Settings, Google receives app interaction and usage information, device and app details, an installation identifier, and approximate region. You can turn it off at any time. Advertising ID collection is disabled. We do not add recordings, voice analysis results, or participant names to analytics events. Google processes this information under its [Firebase privacy information](https://firebase.google.com/support/privacy) and [privacy policy](https://policies.google.com/privacy).
 
 ## 7. Deleting data
 
@@ -115,7 +135,7 @@ Delete a single result with "Delete this result", a group with "Delete this grou
 
 ## 8. Children
 
-The app is not directed at children under 14. When a child takes part in "Make together", a guardian's confirmation is requested, and the entered name and results are stored only on the device.
+The app is not directed at children under 14. Names and results for participants are stored only on the device.
 
 ## 9. Changes
 
@@ -127,11 +147,11 @@ next2great — next2great.dev@gmail.com
 
 ---
 
-# ソリギョル プライバシーポリシー（日本語） {#ja}
+# こえのともだち プライバシーポリシー（日本語） {#ja}
 
-**ソリギョル（Sorigyeol）**（パッケージ名 `com.next2great.sorigyeol`、以下「本アプリ」）は、短く読み上げた声の高さや明るさなどの特徴を端末内で分析し、色と小さなキャラクターで表現するアプリです。
+**こえのともだち（Voice Critters）**（パッケージ名 `com.next2great.sorigyeol`、以下「本アプリ」）は、短く読み上げた声の高さや明るさなどの特徴を端末内で分析し、色と小さなキャラクターで表現するアプリです。
 
-*最終更新日：2026年11月3日*
+*最終更新日：2026年11月11日*
 
 ## 1. 基本方針
 
@@ -143,7 +163,7 @@ next2great — next2great.dev@gmail.com
 ## 2. 端末に保存する情報
 
 - コレクションの結果：キャラクターと色、ユーザーが付けた名前、説明文、要約した測定値（声の高さの中央値と変化の幅、明るさの指標、話した時間など）、結果画面に描く縮小した声の高さの曲線
-- 「みんなで作る」の結果：参加者が入力した名前やニックネーム、関係（家族・友だちなど）、14歳未満の表示、各参加者の結果
+- 「みんなで作る」の結果：参加者が入力した名前やニックネーム、関係（家族・友だちなど）、各参加者の結果
 - アプリの設定：テーマ、動きを減らす、代表キャラクター、最初の案内を見たかどうか
 
 これらの情報は開発者に送信されず、Android のクラウドバックアップと端末間の移行からも除外します。
@@ -159,7 +179,7 @@ next2great — next2great.dev@gmail.com
 
 ## 4. みんなで作る
 
-複数の人が1台の端末で順番に録音し、結果を並べて見ます。録音の前に、端末内で分析し録音は保存しないことを全員に伝えて同意を得るよう案内します。14歳未満の子どもが参加する場合は、保護者が同席し同意したことを確認します。比較は測定値の違いだけを示し、相性のスコアを作ったり関係や性格を推測したりしません。
+複数の人が1台の端末で順番に録音し、結果を並べて見ます。録音の前に、端末内で分析し録音は保存しないことを全員に伝えて同意を得るよう案内します。比較は測定値の違いだけを示し、相性のスコアを作ったり関係や性格を推測したりしません。
 
 ## 5. Google Play の機能
 
@@ -167,7 +187,9 @@ next2great — next2great.dev@gmail.com
 
 ## 6. 分析・広告
 
-本アプリには広告や分析ツールはありません。今後追加する場合も声や結果の内容は送信せず、先にこのポリシーを改めてお知らせします。
+本アプリには広告はありません。Firebase Crashlyticsは、不具合の修正のため、スタックトレース、アプリと端末の情報、インストール識別子などのクラッシュレポートをGoogleに送信します。レポートはFirebaseに約90日間保存されます。
+
+Firebase Analyticsは初期設定ではオフです。設定で利用状況の送信をオンにした場合、アプリの操作・利用状況、アプリと端末の情報、インストール識別子、おおよその地域がGoogleに送信されます。いつでもオフにできます。広告IDの収集は無効にしています。録音、声の分析結果、参加者の名前を分析イベントに含めません。情報は[Firebaseのプライバシーに関する説明](https://firebase.google.com/support/privacy)と[Googleのプライバシーポリシー](https://policies.google.com/privacy)に従って処理されます。
 
 ## 7. 情報の削除
 
@@ -175,7 +197,7 @@ next2great — next2great.dev@gmail.com
 
 ## 8. 子ども
 
-本アプリは14歳未満の子どもを対象としていません。「みんなで作る」に子どもが参加する場合は保護者の確認を求め、入力した名前と結果は端末にのみ保存されます。
+本アプリは14歳未満の子どもを対象としていません。参加者の名前と結果は端末にのみ保存されます。
 
 ## 9. ポリシーの変更
 
