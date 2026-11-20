@@ -1,6 +1,6 @@
 # 목소리친구 개인정보처리방침 (Privacy Policy)
 
-*최종 수정일: 2026년 11월 11일*
+*최종 수정일: 2026년 11월 20일*
 
 [English](#en) · [日本語](#ja)
 
@@ -20,6 +20,7 @@
 - 보관함 결과: 캐릭터와 색, 사용자가 붙인 이름, 설명 문장, 요약 측정값(음높이 중앙값·변화 폭, 소리 밝기 지표, 말한 시간 등), 결과 화면에 그리는 축소한 음높이 곡선
 - 함께 만들기 결과: 참여자가 입력한 이름이나 별명, 관계(가족·친구 등), 각 참여자의 결과
 - 앱 설정: 테마, 움직임 줄이기, 대표 캐릭터, 첫 안내를 본 여부
+- 광고 보상: 보상형 광고로 받은 "하루 동안 배너 숨기기"·"추가 공유 모양"이 끝나는 시각
 
 이 정보는 개발자에게 전송되지 않으며, Android 클라우드 백업과 기기 간 이전에서도 제외합니다.
 
@@ -29,6 +30,8 @@
 - **오디오 파일 가져오기**: 사용자가 고른 파일 하나를 시스템 파일 선택기로 열어 앞부분 15초만 분석합니다. 파일을 앱에 복사해 두지 않습니다.
 - **사진 저장 (Android 9 이하만 저장소 쓰기 권한)**: 사용자가 "갤러리에 저장"을 누를 때 공유 이미지를 사진 폴더에 저장합니다. 갤러리에 저장한 사진은 앱을 지워도 남습니다.
 - **공유**: 사용자가 공유를 누르면 만든 이미지를 Android 공유 창으로 사용자가 고른 앱에 넘깁니다. 이후 처리는 그 앱의 정책을 따릅니다.
+
+- **인터넷·광고 ID (INTERNET, AD_ID)**: 광고를 불러오고 표시하는 데 씁니다(6항). 목소리 분석에는 인터넷을 쓰지 않습니다.
 
 그 밖의 위치, 연락처, 계정 정보 등은 요청하지 않습니다.
 
@@ -42,9 +45,25 @@
 
 - Google 개인정보처리방침: https://policies.google.com/privacy
 
-## 6. 분석·광고
+## 6. 광고·분석
 
-앱에는 광고가 없습니다. 오류 보고와 선택적 이용 통계를 위해 Google Firebase를 사용합니다.
+### 광고 (Google AdMob)
+
+앱은 무료로 제공하기 위해 Google AdMob 광고를 보여 줍니다.
+
+- **배너 광고**: 도감 화면(친구 칸 아래)과 보관함 화면(결과 카드 사이). 광고를 받지 못하면 자리를 차지하지 않습니다.
+- **보상형 광고**: 사용자가 직접 고를 때만 재생합니다. 끝까지 보면 하루 동안 배너 광고를 숨기거나 추가 공유 모양(폴라로이드·컬러 패턴)을 쓸 수 있습니다.
+- 녹음·분석·친구가 태어나는 화면과 결과 화면 위쪽에는 광고를 두지 않으며, 전면 광고는 쓰지 않습니다. 광고 등급은 전체 이용가(G)로 제한합니다.
+
+광고를 불러오고 표시하는 과정에서 Google과 그 광고 파트너가 광고 식별자(광고 ID), IP 주소, 대략적인 위치, 기기·앱 정보, 광고 노출·클릭 정보 등을 처리할 수 있으며, 이는 Google의 개인정보처리방침에 따라 처리됩니다. 목소리, 분석 결과, 사용자가 붙인 이름은 광고 요청에 넣지 않습니다.
+
+유럽경제지역(EEA)·영국·스위스 등 동의가 필요한 지역에서는 광고를 요청하기 전에 Google의 동의 화면(User Messaging Platform)을 보여 주며, 앱 설정의 "광고 개인정보 설정"에서 선택을 바꿀 수 있습니다. 맞춤 광고는 기기의 Google 설정이나 Android 설정에서 끄거나 광고 ID를 재설정·삭제할 수 있습니다.
+
+- Google 광고 관련 개인정보처리방침: https://policies.google.com/technologies/ads
+
+### 오류 보고와 이용 통계 (Google Firebase)
+
+오류 보고와 선택적 이용 통계를 위해 Google Firebase를 사용합니다. 이용 통계에는 광고 ID를 쓰지 않습니다.
 
 목소리친구는 앱의 오류를 찾아 고치기 위해 Google의 **Firebase Crashlytics**를 사용합니다. 앱이 비정상 종료되거나
 처리하지 못한 오류가 생기면 다음 정보가 Google 서버로 전송됩니다.
@@ -89,7 +108,7 @@ Crashlytics 오류 기록은 약 90일 동안 보관된 뒤 삭제됩니다.
 
 **Voice Critters** (package `com.next2great.sorigyeol`, "the app") analyzes features of a short voice sample, such as pitch and brightness, on your device and expresses them as colors and a small character.
 
-*Last updated: November 11, 2026*
+*Last updated: November 20, 2026*
 
 ## 1. Principles
 
@@ -103,6 +122,7 @@ Crashlytics 오류 기록은 약 90일 동안 보관된 뒤 삭제됩니다.
 - Collection results: character and colors, the name you give it, explanation text, summary measurements (median pitch and range, a brightness index, speaking time, etc.) and a reduced pitch curve drawn on the result screen
 - "Make together" results: names or nicknames entered for participants, the relationship (family, friends, etc.), and each participant's result
 - App settings: theme, reduce motion, main character, and whether you've seen the first-run guide
+- Ad rewards: when a reward from a rewarded ad ("hide banners for a day", extra share styles) expires
 
 This data is not sent to the developer and is excluded from Android cloud backup and device-to-device transfer.
 
@@ -112,6 +132,8 @@ This data is not sent to the developer and is excluded from Android cloud backup
 - **Importing an audio file**: the file you pick in the system file picker is opened and only its first 15 seconds are analyzed. The file is not copied into the app.
 - **Saving photos (storage write permission on Android 9 and earlier only)**: when you tap "Save to gallery", the image is saved to your Pictures folder. Saved photos stay even if you uninstall the app.
 - **Sharing**: when you tap share, the image is passed to the app you choose in the Android share sheet, under that app's policy.
+
+- **Internet and advertising ID (INTERNET, AD_ID)**: used to load and show ads (section 6). Voice analysis does not use the internet.
 
 The app does not request location, contacts or account information.
 
@@ -123,11 +145,25 @@ Several people take turns recording on one device and see their results side by 
 
 The app communicates with Google Play to check for new versions and to leave a review (Play in-app review), under Google's privacy policy: https://policies.google.com/privacy
 
-## 6. Analytics and ads
+## 6. Ads and analytics
 
-The app has no ads. Firebase Crashlytics sends crash reports, such as stack traces, app and device information, and installation identifiers, to Google to help fix errors. Crash reports are retained by Firebase for approximately 90 days.
+### Ads (Google AdMob)
 
-Firebase Analytics is off by default. If you enable usage analytics in Settings, Google receives app interaction and usage information, device and app details, an installation identifier, and approximate region. You can turn it off at any time. Advertising ID collection is disabled. We do not add recordings, voice analysis results, or participant names to analytics events. Google processes this information under its [Firebase privacy information](https://firebase.google.com/support/privacy) and [privacy policy](https://policies.google.com/privacy).
+The app shows Google AdMob ads so it can be offered for free.
+
+- **Banner ads**: on the Collection screen (below the friends) and the Library screen (between result cards). If no ad loads, the banner takes no space.
+- **Rewarded ads**: played only when you choose to. If you watch to the end, you can hide banner ads or use extra share styles (polaroid, color pattern) for a day.
+- There are no ads on the recording, analysis or birth screens or at the top of result screens, and no interstitial ads. Ad content is limited to the General (G) rating.
+
+To load and show ads, Google and its ad partners may process the advertising ID, IP address, approximate location, device and app information, and ad impressions and clicks, under Google's privacy policy. Your voice, analysis results and the names you give are never included in ad requests.
+
+In regions that require consent, such as the EEA, the UK and Switzerland, Google's consent form (User Messaging Platform) is shown before ads are requested, and you can change your choice under "Ad privacy settings" in Settings. You can turn off personalized ads or reset or delete your advertising ID in your device's Google or Android settings. See https://policies.google.com/technologies/ads
+
+### Crash reports and usage analytics (Google Firebase)
+
+Usage analytics does not use the advertising ID. Firebase Crashlytics sends crash reports, such as stack traces, app and device information, and installation identifiers, to Google to help fix errors. Crash reports are retained by Firebase for approximately 90 days.
+
+Firebase Analytics is off by default. If you enable usage analytics in Settings, Google receives app interaction and usage information, device and app details, an installation identifier, and approximate region. You can turn it off at any time. Analytics does not collect the advertising ID. We do not add recordings, voice analysis results, or participant names to analytics events. Google processes this information under its [Firebase privacy information](https://firebase.google.com/support/privacy) and [privacy policy](https://policies.google.com/privacy).
 
 ## 7. Deleting data
 
@@ -151,7 +187,7 @@ next2great — next2great.dev@gmail.com
 
 **こえのともだち（Voice Critters）**（パッケージ名 `com.next2great.sorigyeol`、以下「本アプリ」）は、短く読み上げた声の高さや明るさなどの特徴を端末内で分析し、色と小さなキャラクターで表現するアプリです。
 
-*最終更新日：2026年11月11日*
+*最終更新日：2026年11月20日*
 
 ## 1. 基本方針
 
@@ -165,6 +201,7 @@ next2great — next2great.dev@gmail.com
 - コレクションの結果：キャラクターと色、ユーザーが付けた名前、説明文、要約した測定値（声の高さの中央値と変化の幅、明るさの指標、話した時間など）、結果画面に描く縮小した声の高さの曲線
 - 「みんなで作る」の結果：参加者が入力した名前やニックネーム、関係（家族・友だちなど）、各参加者の結果
 - アプリの設定：テーマ、動きを減らす、代表キャラクター、最初の案内を見たかどうか
+- 広告の特典：リワード広告で得た「1日バナーを隠す」「追加の共有デザイン」が終わる時刻
 
 これらの情報は開発者に送信されず、Android のクラウドバックアップと端末間の移行からも除外します。
 
@@ -174,6 +211,8 @@ next2great — next2great.dev@gmail.com
 - **音声ファイルの読み込み**：システムのファイル選択画面で選んだファイルを開き、先頭の15秒だけを分析します。ファイルをアプリにコピーしません。
 - **写真の保存（Android 9 以前のみストレージ書き込み権限）**：「ギャラリーに保存」を押すと、画像を写真フォルダに保存します。保存した写真はアプリを削除しても残ります。
 - **共有**：共有を押すと、作った画像を Android の共有画面で選んだアプリに渡します。その後の取り扱いはそのアプリのポリシーに従います。
+
+- **インターネット・広告ID（INTERNET、AD_ID）**：広告の読み込みと表示に使います（6項）。声の分析にはインターネットを使いません。
 
 位置情報、連絡先、アカウント情報などは要求しません。
 
@@ -185,11 +224,25 @@ next2great — next2great.dev@gmail.com
 
 本アプリは、新しいバージョンの確認とレビュー（Google Play アプリ内レビュー）のために Google Play と通信します。この処理には Google のプライバシーポリシーが適用されます：https://policies.google.com/privacy
 
-## 6. 分析・広告
+## 6. 広告・分析
 
-本アプリには広告はありません。Firebase Crashlyticsは、不具合の修正のため、スタックトレース、アプリと端末の情報、インストール識別子などのクラッシュレポートをGoogleに送信します。レポートはFirebaseに約90日間保存されます。
+### 広告（Google AdMob）
 
-Firebase Analyticsは初期設定ではオフです。設定で利用状況の送信をオンにした場合、アプリの操作・利用状況、アプリと端末の情報、インストール識別子、おおよその地域がGoogleに送信されます。いつでもオフにできます。広告IDの収集は無効にしています。録音、声の分析結果、参加者の名前を分析イベントに含めません。情報は[Firebaseのプライバシーに関する説明](https://firebase.google.com/support/privacy)と[Googleのプライバシーポリシー](https://policies.google.com/privacy)に従って処理されます。
+本アプリは無料で提供するため、Google AdMob の広告を表示します。
+
+- **バナー広告**：図鑑画面（ともだちの欄の下）とコレクション画面（結果カードの間）。広告を受け取れない場合は場所を取りません。
+- **リワード広告**：ユーザーが自分で選んだときだけ再生します。最後まで見ると、1日バナー広告を隠すか、追加の共有デザイン（ポラロイド・カラーパターン）を使えます。
+- 録音・分析・ともだちが生まれる画面と結果画面の上部には広告を置かず、インタースティシャル広告は使いません。広告の内容は全年齢（G）に制限しています。
+
+広告の読み込みと表示のため、Google とその広告パートナーが広告ID、IPアドレス、おおよその位置、端末・アプリの情報、広告の表示・クリック情報などを処理する場合があり、Google のプライバシーポリシーに従って処理されます。声、分析結果、ユーザーが付けた名前を広告リクエストに含めることはありません。
+
+欧州経済領域（EEA）・英国・スイスなど同意が必要な地域では、広告をリクエストする前に Google の同意画面（User Messaging Platform）を表示し、設定の「広告のプライバシー設定」で選択を変更できます。パーソナライズ広告は端末の Google 設定や Android 設定でオフにしたり、広告IDをリセット・削除したりできます。詳しくは https://policies.google.com/technologies/ads をご覧ください。
+
+### エラー報告と利用状況（Google Firebase）
+
+利用状況の送信には広告IDを使いません。Firebase Crashlyticsは、不具合の修正のため、スタックトレース、アプリと端末の情報、インストール識別子などのクラッシュレポートをGoogleに送信します。レポートはFirebaseに約90日間保存されます。
+
+Firebase Analyticsは初期設定ではオフです。設定で利用状況の送信をオンにした場合、アプリの操作・利用状況、アプリと端末の情報、インストール識別子、おおよその地域がGoogleに送信されます。いつでもオフにできます。分析では広告IDを収集しません。録音、声の分析結果、参加者の名前を分析イベントに含めません。情報は[Firebaseのプライバシーに関する説明](https://firebase.google.com/support/privacy)と[Googleのプライバシーポリシー](https://policies.google.com/privacy)に従って処理されます。
 
 ## 7. 情報の削除
 
